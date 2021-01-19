@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="xenqu-api",
-    version="1.0.0",
+    version="1.0.3",
     author="Charles Buffington II",
     author_email="charles.buffington@essium.co",
     description="A full implementation of the Xenqu API in Python.",
@@ -13,5 +13,6 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6'
+    python_requires='>=3.6',
+    install_requires=['requests', 'jwcrypto', 'requests_oauthlib']
 )

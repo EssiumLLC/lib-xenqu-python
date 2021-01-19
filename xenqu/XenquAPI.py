@@ -39,7 +39,7 @@ class XenquAPI:
 
     def reauth(self) -> None:
         self.isInit = False
-        token = self.base.makeOauth2Request(self.pemPrivateKey)
+        token = self.base.makeOauth2Request(self.pemPrivateKey, self.subscriber)
         self.base.updateOauth(token)
         self._updateRoutes()
         self.isInit = True

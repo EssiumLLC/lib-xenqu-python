@@ -142,13 +142,13 @@ class XenquBase:
         pemPrivateKey: bytes
             raw bytes from reading the pem file
     """
-    def makeOauth2Request(self, pemPrivateKey: bytes) -> OAuth2Token:
+    def makeOauth2Request(self, pemPrivateKey: bytes, subscriber: str) -> OAuth2Token:
         key = jwk.JWK.from_pem(pemPrivateKey)
         payload = {
             "exp": time.time() + 300,
             "iss": self.clientId,
             "aud": self.baseUrl,
-            "sub": "5f3ed190c32e5f000186bb76"
+            "sub": subscriber
         }
 
         raw_jwt_token = jwt.JWT(header={"alg": "RS256"}, claims=payload)
