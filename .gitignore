@@ -1,0 +1,11 @@
+__pycache__/
+.vscode/
+testing/
+
+xenqu/__pycache__/
+xenqu/models/__pycache__/
+xenqu/routes/__pycache__/
+xenqu/routes/Tracking/__pycache__/
+
+Pipfile
+Pipfile.lock
