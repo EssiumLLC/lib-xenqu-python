@@ -14,7 +14,7 @@
         subscriber=os.getenv('SUBSCRIBER')
         )
 
-    api.account.getUserInfo()
+    userInfo = api.account.getUserInfo()
 
 ## Progress
 
