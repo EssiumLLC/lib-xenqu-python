@@ -1,6 +1,9 @@
 
 # Python Implementation of the XenquAPI
 
+This is the code for the python implementation of the Xenqu API by Essium, LLC.
+The endpoints accessible are further documented [here](https://apidocs.xenqu.com/).
+
 ## Installation
     pip install xenqu-api
 
