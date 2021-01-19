@@ -11,16 +11,16 @@ pip install xenqu-api
 
 ## Usage
 ```python
-    from xenqu import XenquAPI
+from xenqu import XenquAPI
 
-    api = XenquAPI(
-        clientId = os.getenv('CLIENT_ID'), 
-        clientSecret = os.getenv('CLIENT_SECRET'), 
-        pemPrivateKey = open('./privatekey.pem', 'rb').read(), 
-        subscriber = os.getenv('SUBSCRIBER')
-        )
+api = XenquAPI(
+    clientId = os.getenv('CLIENT_ID'), 
+    clientSecret = os.getenv('CLIENT_SECRET'), 
+    pemPrivateKey = open('./privatekey.pem', 'rb').read(), 
+    subscriber = os.getenv('SUBSCRIBER')
+    )
 
-    userInfo = api.account.getUserInfo()
+userInfo = api.account.getUserInfo()
 ```
 
 ## Progress
