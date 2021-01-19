@@ -5,9 +5,12 @@ This is the code for the python implementation of the Xenqu API by Essium, LLC.
 The endpoints accessible are further documented [here](https://apidocs.xenqu.com). Before getting started also check [this](https://github.com/EssiumLLC/xenqu-rest-api) out.
 
 ## Installation
-    pip install xenqu-api
+```shell
+pip install xenqu-api
+```
 
 ## Usage
+```python
     from xenqu import XenquAPI
 
     api = XenquAPI(
@@ -18,6 +21,7 @@ The endpoints accessible are further documented [here](https://apidocs.xenqu.com
         )
 
     userInfo = api.account.getUserInfo()
+```
 
 ## Progress
 
