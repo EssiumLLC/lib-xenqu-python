@@ -11,10 +11,10 @@ The endpoints accessible are further documented [here](https://apidocs.xenqu.com
     from xenqu import XenquAPI
 
     api = XenquAPI(
-        clientId=os.getenv('CLIENT_ID'), 
-        clientSecret=os.getenv('CLIENT_SECRET'), 
-        pemPrivateKey=open('./privatekey.pem', 'rb').read(), 
-        subscriber=os.getenv('SUBSCRIBER')
+        clientId = os.getenv('CLIENT_ID'), 
+        clientSecret = os.getenv('CLIENT_SECRET'), 
+        pemPrivateKey = open('./privatekey.pem', 'rb').read(), 
+        subscriber = os.getenv('SUBSCRIBER')
         )
 
     userInfo = api.account.getUserInfo()
