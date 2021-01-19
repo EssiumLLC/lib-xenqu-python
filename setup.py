@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="xenqu-api",
-    version="1.0.3",
+    version="1.0.4",
     author="Charles Buffington II",
     author_email="charles.buffington@essium.co",
     description="A full implementation of the Xenqu API in Python.",
