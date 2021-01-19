@@ -6,7 +6,7 @@ setuptools.setup(
     author="Charles Buffington II",
     author_email="charles.buffington@essium.co",
     description="A full implementation of the Xenqu API in Python.",
-    url="https://github.com/EssiumLLC/",
+    url="https://github.com/EssiumLLC/lib-xenqu-python",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

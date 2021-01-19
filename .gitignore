@@ -1,11 +1,17 @@
 __pycache__/
 .vscode/
+build/
+dist/
 testing/
 
 xenqu/__pycache__/
 xenqu/models/__pycache__/
 xenqu/routes/__pycache__/
 xenqu/routes/Tracking/__pycache__/
+
+xenqu_api.egg-info/
+
+.secret-token
 
 Pipfile
 Pipfile.lock
