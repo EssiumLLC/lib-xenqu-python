@@ -11,6 +11,7 @@ pip install xenqu-api
 
 ## Usage
 ```python
+import os
 from xenqu import XenquAPI
 
 api = XenquAPI(
@@ -39,3 +40,10 @@ userInfo = api.account.getUserInfo()
 
 
 ## Problems
+
+## Building
+```shell
+python setup.py sdist bdist_wheel
+
+twine upload dist/*
+```
