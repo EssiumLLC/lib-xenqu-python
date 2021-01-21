@@ -15,9 +15,9 @@ import os
 from xenqu import XenquAPI
 
 api = XenquAPI(
-    clientId = os.getenv('CLIENT_ID'), 
-    clientSecret = os.getenv('CLIENT_SECRET'), 
-    pemPrivateKey = open('./privatekey.pem', 'rb').read(), 
+    clientId = os.getenv('CLIENT_ID'),
+    clientSecret = os.getenv('CLIENT_SECRET'),
+    pemPrivateKey = open('./privatekey.pem', 'rb').read(),
     subscriber = os.getenv('SUBSCRIBER')
     )
 
@@ -39,11 +39,11 @@ userInfo = api.account.getUserInfo()
 | Files                	| ✅          	| ✅           	| ✅      	|
 
 
-## Problems
-
 ## Building
 ```shell
 python setup.py sdist bdist_wheel
 
 twine upload dist/*
 ```
+
+## Problems
